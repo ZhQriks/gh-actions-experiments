@@ -15,4 +15,9 @@ jobs:
       - name: Generate art from README
         run: |
           README_CONTENT=$(cat README.md)
-          npx cowsay "$README_CONTENT" 
+          npx cowsay "$README_CONTENT" >> art.txt
+      - name: Upload art
+        uses: actions/upload-artifact@v3
+        with:
+          name: art
+          path: art.txt
