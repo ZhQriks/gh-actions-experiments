@@ -14,8 +14,3 @@ jobs:
           echo "Get the fuck out of here"
           ls -la
           cat README.md
-          
-      - name: Install and run cowsay
-        run: |
-          npm install -g cowsay
-          npx cowsay "javascript ahuenniy yazik"
